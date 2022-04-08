@@ -13,4 +13,16 @@ public class BonusServiceTest {
 
         assertEquals(expected, actual);
     }
+
+    @org.junit.jupiter.api.Test
+    void findMaxInTheMiddle() {
+        BonusService service = new BonusService();
+
+        long[] incomesInBillions = {12, 5, 8, 4, 5, 33, 8, 6, 11, 11, 12};
+        long expected = 33;
+
+        long actual = service.findMax(incomesInBillions);
+
+        assertEquals(expected, actual);
+    }
 }
